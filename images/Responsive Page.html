@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Responsive Page_files/feather-icons"></script>
+    
+    
+    
+    
+    <title>Responsive Page</title>
+  <link rel="stylesheet" href="./Responsive Page_files/styles.css"><link rel="stylesheet" href="./Responsive Page_files/navbar.css"><link rel="stylesheet" href="./Responsive Page_files/hero.css"><link rel="stylesheet" href="./Responsive Page_files/choose_us.css"></head>
+  <body>
+    <!-- NavBar Container -->
+    <header>
+      <div>
+        <img src="./Responsive Page_files/Azubi_logo.svg" alt="azubi-africa site_logo" class="logo">
+      </div>
+
+      <div id="overlay">
+        <nav id="overlay-nav">
+          <ul>
+            <li><a href="http://127.0.0.1:5500/#about" class="nav-menu-item">About</a></li>
+            <li><a href="http://127.0.0.1:5500/#services" class="nav-menu-item">Services</a></li>
+            <li>
+              <a href="http://127.0.0.1:5500/#contact" class="nav-btn">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu" onclick="showOverlay()"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </div>
+
+      <div class="close-icon" style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x" onclick="hideOverlay()"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </div>
+    </header>
+
+    <!-- Hero Container -->
+    <section class="hero-container">
+      <div class="hero-content">
+        <h1>Earn yourself the Tech Career that you deserve</h1>
+        <p>
+          More than 23,000 job openings exist for cloud developers and data
+          analysts!
+        </p>
+      </div>
+    </section>
+
+    <!-- Why Azubi Africa? Section -->
+    <section class="azubi-container">
+      <h2>Why Azubi Africa?</h2>
+      <p>
+        People learn best by doing. Our program is not just an endless series of
+        video lessons. It incorporates experiential learning throughout, using
+        interactive labs that put you in control of interesting situations.
+      </p>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="choose-us-container">
+      <div class="text-container">
+        <h2>Why choose us as your trusted learning partner?</h2>
+        <hr>
+        <p>We have designed a system that is tailored to your needs</p>
+      </div>
+
+      <div class="flex-container">
+        <div class="card-container">
+          <img src="./Responsive Page_files/Instructor_img.svg" alt="image of instructor" class="card-image">
+          <h3 class="card-title">Instructor-led classes</h3>
+          <p class="card-paragraph">
+            Classes are led by experienced instructors who are subject matter
+            experts in their field.
+          </p>
+          <a href="http://127.0.0.1:5500/" class="card-btn">Read More</a>
+        </div>
+
+        <div class="card-container">
+          <img src="./Responsive Page_files/Realworld_img.jpg" alt="image of instructor" class="card-image">
+          <h3 class="card-title">Real World Experience</h3>
+          <p class="card-paragraph">
+            Azubi provides learners with the opportunity to apply the skills and
+            knowledge they have learned in a real-world context.
+          </p>
+          <a href="http://127.0.0.1:5500/" class="card-btn">Read More</a>
+        </div>
+
+        <div class="card-container">
+          <img src="./Responsive Page_files/Personalized_img.jpg" alt="image of instructor" class="card-image">
+          <h3 class="card-title">Personalized Career Support</h3>
+          <p class="card-paragraph">
+            Personalized career support can help learners to identify their
+            career goals and develop a plan for achieving them.
+          </p>
+          <a href="http://127.0.0.1:5500/" class="card-btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="./Responsive Page_files/script.js"></script>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

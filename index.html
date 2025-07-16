@@ -3,10 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/choose_us.css" />
+    <link rel="stylesheet" href="./styles/contact_us.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <title>Responsive Page</title>
   </head>
   <body>
-    <h1>Responsive Page</h1>
+    <!-- NavBar Container -->
+    <header>
+      <div>
+        <img
+          src="./images/Azubi_logo.svg"
+          alt="azubi-africa site_logo"
+          class="logo"
+        />
+      </div>
+
+      <div id="overlay">
+        <nav id="overlay-nav">
+          <ul>
+            <li><a href="#about" class="nav-menu-item">About</a></li>
+            <li><a href="#services" class="nav-menu-item">Services</a></li>
+            <li>
+              <a href="#contact" class="nav-btn">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu-icon">
+        <i data-feather="menu" onclick="showOverlay()"></i>
+      </div>
+
+      <div class="close-icon">
+        <i data-feather="x" onclick="hideOverlay()"></i>
+      </div>
+    </header>
+
+    <!-- Hero Container -->
+    <section class="hero-container">
+      <div class="hero-content">
+        <h1>Earn yourself the Tech Career that you deserve</h1>
+        <p>
+          More than 23,000 job openings exist for cloud developers and data
+          analysts!
+        </p>
+      </div>
+    </section>
+
+    <!-- Why Azubi Africa? Section -->
+    <section class="azubi-container">
+      <h2>Why Azubi Africa?</h2>
+      <p>
+        People learn best by doing. Our program is not just an endless series of
+        video lessons. It incorporates experiential learning throughout, using
+        interactive labs that put you in control of interesting situations.
+      </p>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="choose-us-container">
+      <div class="text-container">
+        <h2>Why choose us as your trusted learning partner?</h2>
+        <hr />
+        <p>We have designed a system that is tailored to your needs</p>
+      </div>
+
+      <div class="flex-container">
+        <div class="card-container">
+          <img
+            src="./images/Instructor_img.svg"
+            alt="image of instructor"
+            class="card-image"
+          />
+          <h3 class="card-title">Instructor-led classes</h3>
+          <p class="card-paragraph">
+            Classes are led by experienced instructors who are subject matter
+            experts in their field.
+          </p>
+          <a href="" class="card-btn">Read More</a>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/Realworld_img.svg"
+            alt="image of instructor"
+            class="card-image"
+          />
+          <h3 class="card-title">Real World Experience</h3>
+          <p class="card-paragraph">
+            Azubi provides learners with the opportunity to apply the skills and
+            knowledge they have learned in a real-world context.
+          </p>
+          <a href="" class="card-btn">Read More</a>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="./images/Personalized_img.svg"
+            alt="image of instructor"
+            class="card-image"
+          />
+          <h3 class="card-title">Personalized Career Support</h3>
+          <p class="card-paragraph">
+            Personalized career support can help learners to identify their
+            career goals and develop a plan for achieving them.
+          </p>
+          <a href="" class="card-btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-container">
+      <div class="contact-content">
+        <div class="contact-text-container">
+          <h3 class="contact-title">Contact Us</h3>
+          <p class="contact-description">
+            If you have any specific concerns, please feel free to contact us.
+            <br />
+            <br />
+            We welcome any comments, suggestions, feedback, questions, or
+            requests you have.
+          </p>
+        </div>
+
+        <!-- Form Container-->
+        <form action="">
+          <div><input type="text" id="name" placeholder="Name" required /></div>
+          <div>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+          ></textarea>
+          <a href="" class="submit-btn">Submit</a>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <img src="./images/Azubi_logo.svg" alt="Azubi_Logo" />
+        <div>
+          <div class="icons-container">
+            <i data-feather="map-pin" class="icon"></i>
+            <p>Reiss Jct Rd, North Legon- Accra - Ghana</p>
+          </div>
+
+          <div class="icons-container">
+            <i data-feather="phone" class="icon"></i>
+            <p>123-45-679</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <ul>
+          <li>
+            <a href="" class="icon"><i data-feather="twitter"></i></a>
+          </li>
+          <li>
+            <a href="" class="icon"><i data-feather="facebook"></i></a>
+          </li>
+          <li>
+            <a href="" class="icon"><i data-feather="linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Root CSS Variables*/
+:root {
+  --primary-color: #2e5180;
+  --secondary-color: #fff;
+  --text-color: #000;
+  --overlay-background-color: #101010e5;
+  --contact-background-color: #f7f7f7;
+  --footer-background-color: #2e5180cc;
+}
+
+/* Universal Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*  Other Similar Styles */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
